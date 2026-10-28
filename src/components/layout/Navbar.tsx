@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Moon, Sun, ChevronDown, ExternalLink } from 'lucide-react';
 import { useAppConfig } from '../../utils/useAppConfig';
 import { i18n, Lang } from '../../utils/i18n';
+import Logo from './Logo';
 
 function Flag({ lang }: { lang: Lang }) {
   if (lang === 'ES') {
@@ -84,7 +85,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full h-16 bg-white/80 dark:bg-[#0a0e17]/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 flex items-center px-6">
       <a href="#/" className="flex items-center gap-3 no-underline hover:opacity-90 transition-opacity">
-        <img src="/avatar.png" alt="" className="w-7 h-7 rounded-full border border-slate-200 dark:border-slate-700" width="28" height="28" />
+        <Logo size={28} className="w-7 h-7 shrink-0" decorative />
         <span className="text-[13.5px] font-extrabold tracking-[0.14em] uppercase text-slate-900 dark:text-[#f8fafc]">DOGBRO TOOLS</span>
       </a>
 
@@ -140,16 +141,14 @@ export function Navbar() {
             aria-expanded={profileOpen}
             className="flex items-center gap-2 bg-white dark:bg-[#11161d] border border-slate-300 dark:border-[#1f2937] rounded-full pl-1 pr-3 py-1 cursor-pointer transition-colors hover:border-blue-500"
           >
-            <span className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-[11px] font-bold text-white uppercase">
-              D
-            </span>
+            <Logo size={24} className="w-6 h-6 shrink-0" decorative />
             <span className="text-[13px] font-medium text-slate-900 dark:text-[#f8fafc]">Dogbro</span>
           </button>
 
           {profileOpen && (
             <div className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-[#0b1329] border border-slate-200 dark:border-slate-800/80 rounded-xl p-3 shadow-2xl text-xs backdrop-blur-md z-50">
               <div className="flex items-center gap-3">
-                <span className="bg-blue-600 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">DB</span>
+                <Logo size={32} className="w-8 h-8 shrink-0" decorative />
                 <div>
                   <p className="text-sm font-semibold text-slate-900 dark:text-white">Dogbro LLC</p>
                   <p className="text-[11px] text-slate-500 dark:text-slate-400">{dict.s['nav.accountRole']}</p>

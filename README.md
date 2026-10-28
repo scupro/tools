@@ -62,7 +62,7 @@ src/components/tools/    一個工具一個檔案（BackgroundRemover、PdfManag
 src/components/ui/       指令面板與共用元件
 src/utils/i18n.ts        三語字典（ES／EN／ZH）＋ fmt() 佔位符替換
 src/utils/               crypto、image、pdf、compress、md5
-public/                  _headers（CSP）、圖示、robots.txt、sitemap.xml
+public/                  _headers（CSP）、圖示、robots.txt；favicon.svg 是圖示母檔
 tests/                   verify.mjs（靜態檢查）、e2e-bg-removal.mjs（瀏覽器端到端）
 docs/                    橫幅與截圖
 ```
@@ -92,6 +92,7 @@ npm run dev        # http://localhost:5173
 npm run lint       # oxlint
 npm run build      # prebuild 複製 ORT WASM → tsc -b && vite build → dist/
 npm run preview    # 建置後用 wrangler dev 起本機伺服器（會套用 _headers）
+node scripts/make-icons.mjs  # 由 public/favicon.svg 重繪 favicon.ico 與各尺寸 PNG（需本機 chromium；手動執行）
 ```
 
 ## 測試

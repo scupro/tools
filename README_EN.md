@@ -62,7 +62,7 @@ src/components/tools/    one file per tool (BackgroundRemover, PdfManager, …)
 src/components/ui/       command palette and shared primitives
 src/utils/i18n.ts        three-language dictionary (ES / EN / ZH) + fmt() placeholders
 src/utils/               crypto, image, pdf, compress, md5
-public/                  _headers (CSP), icons, robots.txt, sitemap.xml
+public/                  _headers (CSP), icons, robots.txt; favicon.svg is the icon master
 tests/                   verify.mjs (static checks), e2e-bg-removal.mjs (browser E2E)
 docs/                    banner and screenshots
 ```
@@ -92,6 +92,7 @@ npm run dev        # http://localhost:5173
 npm run lint       # oxlint
 npm run build      # prebuild copies ORT WASM → tsc -b && vite build → dist/
 npm run preview    # build, then serve locally with wrangler dev (applies _headers)
+node scripts/make-icons.mjs  # redraw favicon.ico and the PNG set from public/favicon.svg (needs local chromium; manual step)
 ```
 
 ## Tests
