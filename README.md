@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="docs/banner.png" alt="Dogbro Tools — 工具不出瀏覽器" width="100%" />
-</p>
+<h1 align="center">Dogbro Tools</h1>
 
 <p align="center">
   <strong>處理圖片、PDF、資料與網路的線上工具。全部在你的裝置上完成，檔案不會上傳到任何伺服器。</strong><br/>
@@ -57,17 +55,14 @@
 
 ```
 src/App.tsx              工具目錄、搜尋、雜湊路由
-src/components/layout/   Navbar、Footer、Layout
+src/components/layout/   Navbar、Footer、Layout、Logo（品牌圖示）
 src/components/tools/    一個工具一個檔案（BackgroundRemover、PdfManager…）
 src/components/ui/       指令面板與共用元件
 src/utils/i18n.ts        三語字典（ES／EN／ZH）＋ fmt() 佔位符替換
 src/utils/               crypto、image、pdf、compress、md5
 public/                  _headers（CSP）、圖示、robots.txt；favicon.svg 是圖示母檔
 tests/                   verify.mjs（靜態檢查）、e2e-bg-removal.mjs（瀏覽器端到端）
-docs/                    橫幅與截圖
 ```
-
-<p align="center"><img src="docs/screenshots/desktop.png" width="820" alt="桌面版工具目錄" /></p>
 
 ## 安全性與隱私
 
