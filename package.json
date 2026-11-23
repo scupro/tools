@@ -19,15 +19,15 @@
     "browser-image-compression": "^2.0.2",
     "bs58": "^6.0.0",
     "clsx": "^2.1.1",
-    "js-sha3": "^0.14.0",
+    "js-sha3": "^0.16.0",
     "jszip": "^3.10.2",
-    "lucide-react": "^1.73.0",
+    "lucide-react": "^1.77.0",
     "onnxruntime-web": "^1.31.1",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.5.438",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "tailwind-merge": "^3.7.0"
+    "tailwind-merge": "^3.7.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.5",
@@ -35,13 +35,13 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.3.0",
-    "oxlint": "^1.93.0",
+    "oxlint": "^1.94.0",
     "postcss": "^8.5.33",
     "tailwindcss": "^4.3.3",
     "typescript": "~7.0.2",
     "vite": "^8.3.8",
     "vite-plugin-pwa": "^2.0.0",
     "workbox-window": "^7.4.1",
-    "wrangler": "^4.162.0"
+    "wrangler": "^4.165.0"
   }
 }
